@@ -7,16 +7,23 @@ import logo from './img/carrito3.jpg';
 
 const CartWidget = () => {
     return (
-        <picture>
-
-
-            <Card>
-                <Card.Img variant="top" src={logo} alt='carrito' />
-            </Card>
-
-        </picture>
+        <div>
+            <img src={logo} alt="imagen de carrito"/>
+            
+        </div>
     )
 }
-
+        
 
 export default CartWidget;
+
+
+
+
+/*<picture>
+            <Card>
+                <Card.Img variant="top" src={logo} alt='carrito'/>
+            </Card>
+        </picture>
+    )
+}*/

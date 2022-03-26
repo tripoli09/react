@@ -1,0 +1,17 @@
+.itemCount{
+    border-color: rgb(231, 247, 9);
+    border-style: dashed;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    
+}
+
+.botonChico{
+    padding: 2%;
+    text-align: center  ;
+}
+
+.agregarCarrito{
+    margin-top: 2%;
+}

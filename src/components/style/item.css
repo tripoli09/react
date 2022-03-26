@@ -1,0 +1,12 @@
+.item{
+    padding: 1%;
+    border-color: rgb(16, 224, 103);
+    border-style: dashed;
+    margin: 1%;
+    display: inline-block;
+    
+}
+
+.agregarCarrito{
+    align-items: center;
+}

@@ -1,13 +1,12 @@
 import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
 import React from "react";
 import CartWidget from './CartWidget';
-
+import './style/NavBar.css'
 
 const NavBar = () => {
     return (
         <div>
-            <Navbar bg="light" expand="lg">
-                <Container>
+            <Navbar bg="warning" expand="lg" >
                     <Navbar.Brand href="#">Puma</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
@@ -19,10 +18,11 @@ const NavBar = () => {
                                 <NavDropdown.Item href="#">Remeras</NavDropdown.Item>
                                 <NavDropdown.Item href="#">Abrigos</NavDropdown.Item>
                             </NavDropdown>
-                            <CartWidget />
+                            <div>
+                                <CartWidget/>
+                            </div>
                         </Nav>
                     </Navbar.Collapse>
-                </Container>
             </Navbar>
         </div>
     )
