@@ -1,30 +1,32 @@
 import React from 'react';
-import { Card} from 'react-bootstrap';
+import { Card, Form} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ItemCount from './ItemCount';
+import { Link } from 'react-router-dom';
 import './style/item.css'
+import imagenes from './Imagenes'
 
 
 
 
-const Item = ({id, titulo, descripcion, precio, stock}) => {
+const Item = ({product}) => {
 
     const addOn = contador =>{
         console.log(contador)
     }
 
-    var img = "./img/" + id + ".jpg";
-    console.log(img);
+   
 
     return (
         <div className='item'>
             <Card style={{ width: '18rem' }} border="Warning" >
-                <Card.Img variant="top" src={img} alt='productos' />
+                <Card.Img variant="top" src= {imagenes[product.id]} alt='productos' />
                 <Card.Body>
-                    <Card.Title>{titulo}</Card.Title>
-                    <Card.Text>{descripcion} {precio}</Card.Text>
-                    <ItemCount stock={stock} initial="0" addOn={addOn}/>
+                    <Card.Title>{product.titulo}</Card.Title>
+                    <Card.Text>Precio: {product.precio}</Card.Text>
+                    <ItemCount stock={product.stock} initial="0" addOn={addOn}/>
                 </Card.Body>
+                <Link to={`/tienda/${product.id}`} className='Option'>Ver detalle</Link>
             </Card>
         </div>
     )

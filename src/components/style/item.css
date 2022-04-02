@@ -3,10 +3,7 @@
     border-color: rgb(16, 224, 103);
     border-style: dashed;
     margin: 1%;
-    display: inline-block;
+    display: inline-flexbox;
     
 }
 
-.agregarCarrito{
-    align-items: center;
-}

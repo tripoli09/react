@@ -4,7 +4,7 @@ import './style/itemCount.css'
 const ItemCount = ({initial=0 , stock , addOn}) => {
     
     const [count, setCount] = useState(initial)
-
+    
     useEffect(() => {
         return(() => {
             setCount()
