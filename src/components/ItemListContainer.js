@@ -1,19 +1,15 @@
 import ItemList from './ItemList';
 import { getProducts, getProductsByCategory } from './Productos';
 import { useState, useEffect } from 'react';
-import './style/itemListConteiner.css'
 import { useParams } from 'react-router-dom';
+import './style/ItemListContainer.css'
 
 
 
-
-
-
-const ItemListConteiner = () => {
+const ItemListContainer = () => {
   const [products, setProducts] = useState([])
   const {categoriaId} = useParams()
 
-console.log("hola"+ categoriaId)
   
 useEffect(() => {
 if(categoriaId){
@@ -33,7 +29,7 @@ return (() => {
 
   console.log(products)
   return(
-      <div className='itemListConteiner'>
+      <div className='ItemListContainer'>
               <ItemList products={products}/>
           
           
@@ -42,4 +38,4 @@ return (() => {
   )
 }
 
-export default ItemListConteiner;
+export default ItemListContainer;

@@ -1,19 +1,10 @@
 
 import Item from './Item';
-import productos from "./Productos"
-import { getProducts } from './Productos';
-import { useState, useEffect } from 'react';
-import './style/item.css'
+import './style/Item.css'
 
 
-const ItemList = () => {
-    const [products, setProducts] = useState([])
+const ItemList = ({products}) => {
 
-  useEffect(() => {
-      getProducts().then(response => {
-          setProducts(response)
-      })
-  }, [])
    
   return (
     

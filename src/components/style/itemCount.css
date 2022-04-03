@@ -1,18 +1,21 @@
 .itemCount{
-    border-color: rgb(231, 247, 9);
-    border-style: dashed;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
+    margin: 3%;
     
 }
 
 .botonChico{
-    padding: 2%;
-    text-align: center  ;
+    padding: 1%;
+    text-align: center;
 }
 
 .agregarCarrito{
     margin-top: 2%;
     margin-left: 2%;
+}
+
+.contador{
+    margin: 4%;
 }

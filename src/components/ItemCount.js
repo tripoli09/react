@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import './style/itemCount.css'
+import './style/ItemCount.css'
 
 const ItemCount = ({initial=0 , stock , addOn}) => {
     
@@ -31,12 +31,12 @@ const ItemCount = ({initial=0 , stock , addOn}) => {
     return(
         <div >
             <div className='itemCount'>
-                <button className="botonChico" onClick={decrement}>-</button>
-                <p className="botonChico" >{count}</p>
-                <button className="botonChico" onClick={increment}>+</button>
+                <button className="botonChico myButton" onClick={decrement}>-</button>
+                <p className="contador" >{count}</p>
+                <button className="botonChico myButton" onClick={increment}>+</button>
             </div>
             
-            <button onClick={() => addOn(count)} href="#" variant="primary" className='agregarCarrito'>Añadir al carrito</button>
+            <button onClick={() => addOn(count)} href="#" variant="primary" className='myButton'>Añadir al carrito</button>
         </div>
     )
 }

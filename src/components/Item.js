@@ -3,7 +3,7 @@ import { Card, Form} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ItemCount from './ItemCount';
 import { Link } from 'react-router-dom';
-import './style/item.css'
+import './style/Item.css'
 import imagenes from './Imagenes'
 
 
@@ -26,7 +26,7 @@ const Item = ({product}) => {
                     <Card.Text>Precio: {product.precio}</Card.Text>
                     <ItemCount stock={product.stock} initial="0" addOn={addOn}/>
                 </Card.Body>
-                <Link to={`/tienda/${product.id}`} className='Option'>Ver detalle</Link>
+                <Link to={`/tienda/${product.id}`} className='myButton'>Ver detalle</Link>
             </Card>
         </div>
     )

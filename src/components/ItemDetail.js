@@ -16,6 +16,7 @@ const ItemDetail= ({id, titulo, descripcion, precio, stock, categoria}) => {
                 <Card.Body>
                     <Card.Title>{titulo}</Card.Title>
                     <Card.Text> {descripcion}</Card.Text>
+                    <Card.Text> Disponible:{stock}</Card.Text>
                     <Card.Text>Precio: {precio}</Card.Text>
                     <Card.Text>categoria: {categoria}</Card.Text>
                     <ItemCount stock={stock} initial="0" />

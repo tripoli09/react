@@ -1,5 +1,5 @@
 import { Navbar, Container, Nav , NavDropdown } from 'react-bootstrap';
-import {Link, NavLink} from 'react-router-dom'
+import { NavLink} from 'react-router-dom'
 import CartWidget from './CartWidget';
 import './style/NavBar.css'
 
@@ -17,12 +17,12 @@ const NavBar = () => {
                             <NavLink to="/categoria/pantalon" className={({isActive}) => isActive ? 'Activeoption' :'Option'}>pantalon</NavLink>
                             <NavLink to="/categoria/remera" className={({isActive}) => isActive ? 'Activeoption' :'Option'}>remera</NavLink>
                             <NavLink to="/categoria/media" className={({isActive}) => isActive ? 'Activeoption' :'Option'}>media</NavLink>
-                            <div>
-                                <CartWidget/>
-                            </div>
+                                
                         </Nav>
                     </Navbar.Collapse>
+                    <CartWidget/>
             </Navbar>
+            
         </div>
     )
 }
