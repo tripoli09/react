@@ -12,15 +12,15 @@ const NavBar = () => {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
                             <NavLink to="/" className={({isActive}) => isActive ? 'Activeoption' :'Option'}>Inicio</NavLink>
-                            <NavLink to="/envio" className={({isActive}) => isActive ? 'Activeoption' :'Option'}>envio</NavLink>
-                            <NavLink to="/tienda" className={({isActive}) => isActive ? 'Activeoption' :'Option'}>tienda</NavLink>
-                            <NavLink to="/categoria/pantalon" className={({isActive}) => isActive ? 'Activeoption' :'Option'}>pantalon</NavLink>
-                            <NavLink to="/categoria/remera" className={({isActive}) => isActive ? 'Activeoption' :'Option'}>remera</NavLink>
-                            <NavLink to="/categoria/media" className={({isActive}) => isActive ? 'Activeoption' :'Option'}>media</NavLink>
+                            <NavLink to="/envio" className={({isActive}) => isActive ? 'Activeoption' :'Option'}>Envio</NavLink>
+                            <NavLink to="/tienda" className={({isActive}) => isActive ? 'Activeoption' :'Option'}>Tienda</NavLink>
+                            <NavLink to="/categoria/pantalon" className={({isActive}) => isActive ? 'Activeoption' :'Option'}>Pantalón</NavLink>
+                            <NavLink to="/categoria/remera" className={({isActive}) => isActive ? 'Activeoption' :'Option'}>Remera</NavLink>
+                            <NavLink to="/categoria/media" className={({isActive}) => isActive ? 'Activeoption' :'Option'}>Media</NavLink>
                                 
                         </Nav>
                     </Navbar.Collapse>
-                    <CartWidget/>
+                    <CartWidget />
             </Navbar>
             
         </div>
@@ -28,3 +28,4 @@ const NavBar = () => {
 }
 
 export default NavBar;
+

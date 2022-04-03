@@ -22,12 +22,12 @@ img {
     /* color: #8C30F5; */
     text-decoration: none;
     border-radius: 25;
-    margin: 0 50px;
+    margin: 0 1%;
     /* TODO */
     width: auto;
     padding: 12px;
-    font-size: 8px;
-    background: #8C30F5;
+    font-size: 1rem;
+    background: #ac17b1;
     border-radius: 8px;
     flex: none;
     display: flex;
@@ -42,4 +42,36 @@ img {
     border-style: none;
     cursor: pointer;
     outline: inherit;
+  }
+
+   .Activeoption {
+    /* color: #8C30F5; */
+    text-decoration: none;
+    border-radius: 25;
+    margin: 0 50px;
+    /* TODO */
+    width: auto;
+    padding: 12px;
+    font-size: 2 rem;
+    background: rgba(128, 0, 128, 0.822);
+    border-radius: 8px;
+    flex: none;
+    display: flex;
+    order: 1;
+    align-self: center;
+    flex-grow: 0;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    border: none;
+    border-style: none;
+    cursor: pointer;
+    outline: inherit;
+  }
+
+  .Carrito {
+      width: 10%;
+      float: right;
+      margin-right: 3%;
   }
