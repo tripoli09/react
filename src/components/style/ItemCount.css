@@ -1,0 +1,21 @@
+.itemCount{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 3%;
+    
+}
+
+.botonChico{
+    padding: 1%;
+    text-align: center;
+}
+
+.agregarCarrito{
+    margin-top: 3%;
+    margin-left: 3%;
+}
+
+.contador{
+    margin: 4%;
+}

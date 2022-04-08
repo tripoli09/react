@@ -1,0 +1,8 @@
+.itemListConteiner{
+    display: block;
+    padding: 1%;
+    border-color: rgb(219, 23, 23);
+    border-style: dashed;
+    margin: 3%;
+    overflow: hidden;
+}

@@ -1,0 +1,7 @@
+.itemListConteiner{
+    display: inline-flex;
+    padding: 1%;
+    border-color: rgb(219, 23, 23);
+    border-style: dashed;
+    overflow: hidden;
+}
