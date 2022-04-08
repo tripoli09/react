@@ -13,7 +13,6 @@ const ItemDetail = ({ id, titulo, descripcion, precio, stock, categoria }) => {
 
     const handleOnAdd = (count) => {
         setQuantity(count)
-        //setCart([...cart, {id, titulo, descripcion, precio, stock, categoria}])
         addItem({id, titulo, precio}, count)
     }
 
@@ -31,8 +30,8 @@ const ItemDetail = ({ id, titulo, descripcion, precio, stock, categoria }) => {
                     <Card.Text>Precio: {precio}</Card.Text>
                     <Card.Text>categoria: {categoria}</Card.Text>
                     <footer>
-                        {quantity === 0 ? <ItemCount onAdd={handleOnAdd} stock={stock} initial="0" /> : <Link to='/cart'><button>Ir al carrito</button></Link>}
-                    </footer>
+                        {quantity === 0 ? <ItemCount onAdd={handleOnAdd} stock={stock} initial="0" /> : <Link to='/cart'><button className="myButton">Ir al carrito</button></Link>}
+                        <button className="myButton">Volver</button>
                 </Card.Body>
             </Card>
         </div>
@@ -41,3 +40,4 @@ const ItemDetail = ({ id, titulo, descripcion, precio, stock, categoria }) => {
 
 
 export default ItemDetail;
+

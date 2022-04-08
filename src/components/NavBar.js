@@ -6,8 +6,8 @@ import './style/NavBar.css'
 const NavBar = () => {
     return (
         <div>
-            <Navbar bg="warning" expand="lg" >
-                   <Link to="/"> <Navbar.Brand >Puma</Navbar.Brand> </Link>
+            <Navbar bg="primary" expand="lg" >
+                   <Link to="/"> <Navbar.Brand className='noSub' >Puma</Navbar.Brand> </Link>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">

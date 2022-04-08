@@ -1,22 +1,11 @@
 
-/*picture {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 100px;
-    margin-bottom: 10px;
-    }
-    
-img {
-        border-radius: 50%;
-        box-shadow: 0 0 15px #555;
-        margin-bottom: 10px;
-    }*/
-
 .NavLink{
     margin: 1%;
 }
 
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
 
 
 .Option {
@@ -28,7 +17,7 @@ img {
     width: auto;
     padding: 12px;
     font-size: 1rem;
-    background: #ac17b1;
+    background: #000000;
     border-radius: 8px;
     flex: none;
     display: flex;
@@ -38,7 +27,7 @@ img {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: #FFFFFF;
+    color:rgba(255, 255, 255, 0.822);
     border: none;
     border-style: none;
     cursor: pointer;
@@ -49,12 +38,12 @@ img {
     /* color: #8C30F5; */
     text-decoration: none;
     border-radius: 25;
-    margin: 0 50px;
+    margin: 0 1%;
     /* TODO */
     width: auto;
     padding: 12px;
     font-size: 2 rem;
-    background: rgba(128, 0, 128, 0.822);
+    background: rgba(237, 245, 239, 0.822);
     border-radius: 8px;
     flex: none;
     display: flex;
@@ -64,7 +53,7 @@ img {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: #FFFFFF;
+    color: #0c0101;
     border: none;
     border-style: none;
     cursor: pointer;

@@ -27,7 +27,7 @@ return (() => {
 }, [categoriaId])
 
 
-  console.log(products)
+ 
   return(
       <div className='ItemListContainer'>
               <ItemList products={products}/>
