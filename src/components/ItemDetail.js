@@ -31,7 +31,7 @@ const ItemDetail = ({ id, titulo, descripcion, precio, stock, categoria }) => {
                     <Card.Text>categoria: {categoria}</Card.Text>
                     <footer>
                         {quantity === 0 ? <ItemCount onAdd={handleOnAdd} stock={stock} initial="0" /> : <Link to='/cart'><button className="myButton">Ir al carrito</button></Link>}
-                        <button className="myButton">Volver</button>
+                    </footer>
                 </Card.Body>
             </Card>
         </div>

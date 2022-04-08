@@ -12,7 +12,7 @@ import Cart from './components/Cart'
 
 function App() {
  
-
+ 
   return (
     
     <div className="App">
@@ -28,6 +28,8 @@ function App() {
             <Route path='/tienda/:productoId' element={<ItemDetailContainer />} />
             <Route path='/categoria/:categoriaId' element={<ItemListContainer />} />
             <Route path='/cart' element={<Cart />} />
+          
+
           </Routes>
         </BrowserRouter>
         </CartContextProvider>
