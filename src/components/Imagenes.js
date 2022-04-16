@@ -1,11 +1,11 @@
 
-import Img0 from './img/img1.jpg';
-import Img1 from './img/img1.jpg';
-import Img2 from './img/img2.jpg';
-import Img3 from './img/img3.jpg';
-import Img4 from './img/img3.jpg';
-import Img5 from './img/img2.jpg';
-import Img6 from './img/img1.jpg';
+import Img0 from './img/1.png';
+import Img1 from './img/1.png';
+import Img2 from './img/2.png';
+import Img3 from './img/3.png';
+import Img4 from './img/3.png';
+import Img5 from './img/2.png';
+import Img6 from './img/1.png';
 
 export default [
     Img0,

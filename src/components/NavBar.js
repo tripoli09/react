@@ -16,7 +16,8 @@ const NavBar = () => {
                             <NavLink to="/tienda" className={({isActive}) => isActive ? 'Activeoption' :'Option'}>Tienda</NavLink>
                             <NavLink to="/categoria/pantalon" className={({isActive}) => isActive ? 'Activeoption' :'Option'}>Pantalón</NavLink>
                             <NavLink to="/categoria/remera" className={({isActive}) => isActive ? 'Activeoption' :'Option'}>Remera</NavLink>
-                            <NavLink to="/categoria/media" className={({isActive}) => isActive ? 'Activeoption' :'Option'}>Media</NavLink>  
+                            <NavLink to="/categoria/media" className={({isActive}) => isActive ? 'Activeoption' :'Option'}>Media</NavLink> 
+                            <NavLink to="/cart" className={({isActive}) => isActive ? 'Activeoption' :'Option'}>Carrito</NavLink>   
                         </Nav>
                     </Navbar.Collapse>
                     <CartWidget />
