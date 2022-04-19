@@ -14,9 +14,9 @@ const NavBar = () => {
                             <NavLink to="/" className={({isActive}) => isActive ? 'Activeoption' :'Option'}>Inicio</NavLink>
                             <NavLink to="/envio" className={({isActive}) => isActive ? 'Activeoption' :'Option'}>Envio</NavLink>
                             <NavLink to="/tienda" className={({isActive}) => isActive ? 'Activeoption' :'Option'}>Tienda</NavLink>
-                            <NavLink to="/categoria/pantalon" className={({isActive}) => isActive ? 'Activeoption' :'Option'}>Pantalón</NavLink>
-                            <NavLink to="/categoria/remera" className={({isActive}) => isActive ? 'Activeoption' :'Option'}>Remera</NavLink>
-                            <NavLink to="/categoria/media" className={({isActive}) => isActive ? 'Activeoption' :'Option'}>Media</NavLink> 
+                            <NavLink to="/categoria/Impresion" className={({isActive}) => isActive ? 'Activeoption' :'Option'}>Impresion</NavLink>
+                            <NavLink to="/categoria/Editorial" className={({isActive}) => isActive ? 'Activeoption' :'Option'}>Editorial</NavLink>
+                            <NavLink to="/categoria/Papeleria" className={({isActive}) => isActive ? 'Activeoption' :'Option'}>Papeleria</NavLink> 
                             <NavLink to="/cart" className={({isActive}) => isActive ? 'Activeoption' :'Option'}>Carrito</NavLink>   
                         </Nav>
                     </Navbar.Collapse>

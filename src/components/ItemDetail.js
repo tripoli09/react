@@ -5,27 +5,27 @@ import imagenes from './Imagenes';
 import { useState, useContext } from 'react'
 import { Link } from 'react-router-dom';
 import CartContext from '../context/CartContext'
+//import { useNotification } from '../notification/notification'
 
-const ItemDetail = ({ id, titulo, descripcion, precio, stock, categoria }) => {
+const ItemDetail = ({ id, titulo, descripcion, precio, stock, categoria, img}) => {
     const [quantity, setQuantity] = useState(0)
-    
-    const {addItem} = useContext(CartContext)
+
+    const { addItem } = useContext(CartContext)
+    //const  setNotification  = useNotification()
 
     const handleOnAdd = (count) => {
         setQuantity(count)
-        addItem({id, titulo, precio}, count)
+        addItem({ id, titulo, precio}, count)
+       // setNotification('success', 'Se agregaron los productos al carrito')
     }
-
-    
-
+        
 
     return (
-        <div>
             <Card style={{ width: '20rem' }} border="Warning" >
-                <Card.Img variant="top" src={imagenes[id]} alt={id} />
+                <Card.Img variant="top" src= {imagenes[img]} alt='productos' />
                 <Card.Body>
-                    <Card.Title>{titulo}</Card.Title>
-                    <Card.Text> {descripcion}</Card.Text>
+                    <Card.Title>nombre {titulo}</Card.Title>
+                    <Card.Text> descripcion {descripcion}</Card.Text>
                     <Card.Text> Disponible:{stock}</Card.Text>
                     <Card.Text>Precio: {precio}</Card.Text>
                     <Card.Text>categoria: {categoria}</Card.Text>
@@ -34,10 +34,9 @@ const ItemDetail = ({ id, titulo, descripcion, precio, stock, categoria }) => {
                     </footer>
                 </Card.Body>
             </Card>
-        </div>
+        
     )
 }
-
 
 export default ItemDetail;
 

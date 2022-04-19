@@ -1,36 +1,48 @@
 
 import React from 'react';
 import ItemDetail from './ItemDetail';
-import { getProductById} from './Productos';
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import './style/ItemDetailContainer.css';
+import { firestoreDb } from './services/firebase';
+import { getDoc, doc } from 'firebase/firestore';
 
 
 
-    const ItemDetailContainer = () => {
-        const [products, setProducts] = useState([])
+const ItemDetailContainer = ({addToCart, cart}) => {
+    const [product, setProduct] = useState()
+    const [loading, setLoading] = useState(true)
 
-        const {productoId} = useParams()
-       
+    const { productoId } = useParams()
 
-        useEffect(() => {
-            getProductById(productoId).then(prod => {
-                setProducts(prod)
-            })
-        }, [])
+    useEffect(() => {
+        setLoading(true)
 
-     
-        
-       
-        return(
-            <div className='ItemDetailContainer'>
-                 <ItemDetail  id={products.id} titulo={products.titulo} 
-                    descripcion={products.descripcion} precio={products.precio}
-                    stock={products.stock}  categoria={products.categoria}/>
-            </div>
-      
-        )
-      }
+
+        const docRef = doc(firestoreDb, 'products', productoId)
+
+        getDoc(docRef).then(querySnapshot => {
+            const product = { id: querySnapshot.id, ...querySnapshot.data() }
+            setProduct(product)
+        }).catch(error => {
+            console.log(error)
+        }).finally(() => {
+            setLoading(false)
+        })
+
+    }, [productoId])
+    
+
+    if(loading) {
+        return <h1>Cargando...</h1>
+    }
+
+    return(
+        <div className='ItemDetailContainer'>
+            <ItemDetail {...product} addToCart={addToCart} cart={cart}/>
+            
+        </div>
+    )
+}
 
 export default ItemDetailContainer;
