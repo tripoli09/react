@@ -1,13 +1,14 @@
 import { Navbar, Container, Nav , NavDropdown } from 'react-bootstrap';
 import { Link, NavLink} from 'react-router-dom'
 import CartWidget from './CartWidget';
-import './style/NavBar.css'
+import './style/NavBar.css';
+import Imagenes from './Imagenes'
 
 const NavBar = () => {
     return (
         <div>
             <Navbar bg="primary" expand="lg" >
-                   <Link to="/"> <Navbar.Brand className='noSub' >Puma</Navbar.Brand> </Link>
+                   <Link to="/"> <img src={Imagenes[23]} width="20%"/> </Link>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">

@@ -4,7 +4,7 @@ import ItemDetail from './ItemDetail';
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import './style/ItemDetailContainer.css';
-import { firestoreDb } from './services/firebase';
+import { firestoreDb } from '../services/firebase';
 import { getDoc, doc } from 'firebase/firestore';
 
 
