@@ -4,7 +4,7 @@ Página web React
 ***
 ### Librerias necesarias
 ***
-* git clone https://example.com
+* git clone https://github.com/tripoli09/react/tree/master
 * cd ../path/to/the/file
 * npm install
 * npm start
