@@ -25,6 +25,7 @@ import Img22 from './img/22.jpg';
 import logo from './img/logo.png';
 
 
+
 export default [
     Img0,
     Img1,
@@ -50,4 +51,5 @@ export default [
     Img21,
     Img22,
     logo,
+    
 ]

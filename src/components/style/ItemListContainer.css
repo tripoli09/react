@@ -1,5 +1,6 @@
 .itemListConteiner{
-    display: inline-flex;
+    display: block;
     padding: 1%;
+    margin: 2%;
     overflow: hidden;
 }

@@ -1,24 +1,39 @@
 
 .NavLink{
-    margin: 1%;
+    margin: 0%;
 }
 
 a:link, a:visited, a:active {
     text-decoration:none;
 }
 
+.imgini{
+    width: 20%;
+    margin-top: 0;
+    margin-left: 0;
+    
+}
 
+.fondo{
+    background-color: rgb(48, 76, 231);
+}
+
+.menu{
+    margin: 0% !important;
+    padding: 0% !important;
+    float: inline-start;
+    
+    
+}
 .Option {
-    /* color: #8C30F5; */
     text-decoration: none;
     border-radius: 25;
     margin: 0 1%;
-    /* TODO */
     width: auto;
-    padding: 12px;
+    padding: 0.75rem;
     font-size: 1rem;
     background: #000000;
-    border-radius: 8px;
+    border-radius: 0.75rem;
     flex: none;
     display: flex;
     order: 1;
@@ -35,11 +50,9 @@ a:link, a:visited, a:active {
   }
 
    .Activeoption {
-    /* color: #8C30F5; */
     text-decoration: none;
     border-radius: 25;
     margin: 0 1%;
-    /* TODO */
     width: auto;
     padding: 12px;
     font-size: 2 rem;
@@ -62,6 +75,7 @@ a:link, a:visited, a:active {
 
   .Carrito {
       width: 10%;
+      
       float: right;
-      margin-right: 3%;
+      
   }

@@ -25,6 +25,25 @@
         text-align: center;
         margin: 1%;
     }
+
+    .myButtondDisabled {
+        box-shadow:inset 0px 1px 0px 0px #fc0000;
+        background:linear-gradient(to bottom, #454141 5%, #404040 100%);
+        background-color:#ededed63;
+        border-radius:6px;
+        border:1px solid #dcdcdc;
+        display:inline-block;
+        cursor:pointer;
+        color:#777777da;
+        font-family:Arial;
+        font-size:15px;
+        font-weight:bold;
+        padding:6px 24px;
+        text-decoration:none;
+        text-shadow:0px 1px 0px #ffffff;
+        text-align: center;
+        margin: 1%;
+    }
     .myButton:hover {
         background:linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
         background-color:#dfdfdf;
@@ -34,3 +53,14 @@
         top:1px;
     }
     
+    .carrito{
+        background-color: #e3e1db;
+    }
+
+    .total{
+       background-color: #99e1ee;
+    }
+
+    .div{
+        bottom: 6%;
+    }

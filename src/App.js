@@ -4,11 +4,12 @@ import NavBar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Contacto from './components/Contacto'
 import Inicio from './components/Inicio';
-import Envio from './components/Envio';
 import {CartContextProvider} from './context/CartContext';
 import Cart from './components/Cart'
-
+import { NotificationProvider } from './notification/Notification'
+import Footer from './components/Footer';
 
 function App() {
  
@@ -16,6 +17,7 @@ function App() {
   return (
     
     <div className="App">
+      <NotificationProvider>
         <CartContextProvider>
         <BrowserRouter>
           <header className="App-header">
@@ -23,17 +25,22 @@ function App() {
           </header>
           <Routes>
             <Route path='/' element={<Inicio />} />
-            <Route path='/envio' element={<Envio />} />
             <Route path='/tienda' element={<ItemListContainer />} />
             <Route path='/tienda/:productoId' element={<ItemDetailContainer />} />
             <Route path='/categoria/:categoriaId' element={<ItemListContainer />} />
             <Route path='/cart' element={<Cart />} />
-          
-
+            <Route path='/contacto' element={<Contacto />} />
+           
           </Routes>
+          <footer>
+             <Footer/>
+           </footer>
         </BrowserRouter>
         </CartContextProvider>
+        </NotificationProvider>
+        
     </div>
+
   );
 }
 

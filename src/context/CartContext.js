@@ -4,7 +4,17 @@ const Context = createContext()
 
 export const CartContextProvider = ({ children }) => {
     const [cart, setCart] = useState([]);
-   
+    const [dataFormName, setDataFormName] = useState("")
+    const [dataFormAdress, setDataFormAdress] = useState("")
+    const [dataFormPhone, setDataFormPhone] = useState("")
+    const [dataFormZip, setDataFormZip] = useState("")
+    const [dataFormEmail, setDataFormEmail] = useState("")
+    const [buttonState, setButtonState] = useState(true)
+    const [dataTextArea, setDataTextArea] = useState("")
+
+    const addDataForm = () =>{
+
+    }
 
     const addItem = (producto, cantidad) => {
         let inCart = false;
@@ -42,7 +52,16 @@ export const CartContextProvider = ({ children }) => {
         const filter = cart.filter(prod => prod.id !== productId);
         setCart(filter);
     }
-
+     
+    const total = () => {
+        let totalPrice = 0
+        for ( let i = 0; i < cart.length; i++){
+            totalPrice = totalPrice + cart[i].precio * cart[i].cantidad
+            console.log(cart[i])
+            
+        }
+        return totalPrice
+    }
 
     return (
         <Context.Provider value={{ 
@@ -51,7 +70,11 @@ export const CartContextProvider = ({ children }) => {
             clearCart,
             getQuantity,
             removeItem,
-            
+            total,
+            dataFormName, setDataFormName,dataFormAdress, setDataFormAdress,
+             dataFormPhone, setDataFormPhone,dataFormEmail, setDataFormEmail,
+             dataFormZip, setDataFormZip,buttonState, setButtonState,dataTextArea,
+             setDataTextArea
         }}>
             {children}
         </Context.Provider>
